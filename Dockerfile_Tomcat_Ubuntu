@@ -7,3 +7,4 @@ RUN cd /tmp && tar xvfz tomcat.tar.gz \
     && cp -Rv /tmp/apache-tomcat-8.5.46/* /usr/local/tomcat/
 EXPOSE 8080
 CMD /usr/local/tomcat/bin/catalina.sh run
+ENTRYPOINT /usr/local/tomcat
